@@ -5,5 +5,10 @@ import { Component } from '@angular/core';
   styleUrls:['./app.component.scss']
 })
 export class AppComponent {
+
+  isValid = true;
+  EmailValid(event: boolean){
+    this.isValid = event
+  }
   name = 'Angular';
 }

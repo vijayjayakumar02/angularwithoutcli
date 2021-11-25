@@ -1,1 +1,3 @@
 <span appColor>Email Id:</span>
+<input type="text" (valueChange)="EmailValid($event)" checkEmail>
+<span *ngIf="!isValid">Error</span>
